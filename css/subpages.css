@@ -1,0 +1,241 @@
+/*Sub page common styles*/
+/*Bread crumbs*/
+.breadcrumbs {
+    margin-bottom: 20px;
+}
+
+.breadcrumbs a{
+    color: black;
+}
+
+.breadcrumbs li{
+    padding: 0 5px;
+}
+
+.breadcrumbs .onThePage{
+    color: var(--primary-brand-color);
+}
+
+/*Page title*/
+.subPageTitle {
+    margin-top: 20px;
+}
+
+.subPageTitle img {
+    margin-right: 10px;
+    width: 150px;
+}
+
+/*Deals page*/
+/*Choose category*/
+.dealsCategory {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.categoryBox {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.dealsCategoryCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+.dealsCategoryCard a{
+    text-align: center;
+    color: black
+}
+
+.CardImage{
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    width:  180px;    
+    height: 180px;     
+}
+
+.CardImage:hover{
+    background-color: var(--primary-brand-color); 
+    transition: background 250ms ease-in-out;
+}
+
+.CardImage:hover img{
+    filter: invert(1) saturate(0) brightness(2);
+    transition: background 250ms ease-in-out;
+}
+
+/*Save on Groceries*/
+.saveOnGroceries {
+    margin-top: 100px;
+    background-color: #F6F5F5;
+    padding: 40px 0 20px;
+}
+
+.saveOnGroceriesTitle {
+    width: 30%;
+}
+
+.saveOnGroceries .saveOnGroceriesProductBox {
+    width: 70%;
+}
+
+.saveOnGroceries h4 {
+    display: none;
+    color: var(--primary-brand-color);
+    margin-bottom: 20px;
+}
+
+/*Offers Ending Sunday*/
+.offersEndingSundaySection {
+    margin-top: 100px;
+}
+
+.offersEndingSundaySection h3{
+    text-align: center;
+}
+
+.offersEndingSundaySection a{
+    color: var(--primary-brand-color);
+}
+
+
+/*Household item page*/
+main {
+    margin-top: 50px;
+}
+
+main .responsiveFlexBox {
+    align-items: flex-start;
+}
+
+.sideBar {
+    width: 23%;
+}
+
+.sideBar a{
+    color: black;
+}
+
+.itemBoxRight {
+    width: 75%;
+}
+
+/*Side bar*/
+.accordion {
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+}
+  
+.active, .accordion:hover {
+    background-color: rgb(235, 235, 235);
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+
+.panel li{
+    padding: 10px 0;
+  }
+
+.panel li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion:after {
+    content: '\02795'; /* + */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* - */
+}
+
+
+/*Right side*/
+.itemBoxRight .productCard {
+    margin-bottom: 50px;
+}
+
+.itemBoxRight button {
+    width: 100px;
+}
+
+
+
+
+/*Media query*/
+/*Extra large screen (1501px-)*/
+@media (min-width: 1500px){
+
+}
+
+/*Medium screen (769px-940px)*/
+@media (max-width: 940px){
+    /*Household page - Right side*/
+    .itemBoxRight .productCard {
+        width: 25%
+    }
+}
+
+/*Medium & large screen (769px-)*/
+@media (min-width: 768px){
+
+}
+
+/*Small screen (531px-767px)*/
+@media (max-width: 767px){
+    .responsiveFlexChild {
+        width: 100%;
+    }
+
+    /*Deals page - Save on groceries*/
+    .saveOnGroceriesTitle {
+        display: none;
+    }
+    .saveOnGroceries .saveOnGroceriesProductBox {
+        width: 100%;
+    }
+    .saveOnGroceries h4 {
+        display: block;
+    }
+
+    /*Household page - Side bar*/
+    .sideBar {
+        margin-bottom: 20px;
+    }
+
+    /*Household page - Right side*/
+    .itemBoxRight .productCard {
+        width: 40%
+    }
+}
+
+
+/*Extra small screen (-530px)*/
+@media (max-width: 530px){
+    /*Household page - Right side*/
+    .itemBoxRight .productCard {
+        width: 100%
+    }
+}
+
+
