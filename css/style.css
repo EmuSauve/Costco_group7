@@ -451,7 +451,7 @@ header a:hover {
 }
 
 .dealsHeading {
-    background-color: red;
+    background-color: var(--secondary-brand-color);
     width: 150px;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
     padding: 2px 10px 2px 55px; 
@@ -465,7 +465,7 @@ header a:hover {
 
 .dealLabel {
     position: absolute;
-    background-color: red;
+    background-color: var(--secondary-brand-color);
     top: 10px;
     left: -20px;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
